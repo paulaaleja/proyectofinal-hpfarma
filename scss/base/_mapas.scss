@@ -1,0 +1,32 @@
+/* mapas */
+
+/* Los mapas a diferencia de las listas nos permiten crear como una lista
+pero de un monton de estilos agrupados y no necesiariamente de la misma 
+familia, no es que tienen que ser  todos colores, o todas tipografias */
+
+/* El mapa se escribe como las variables o listas con el $, pero se abre abre parentesis
+despues de los dos puntos */
+
+$boton:(
+   /* key - value (valor) */
+   bg-boton: black,
+   border: 2px solid tomato,
+   color-text: white,
+   font-size-boton:20px,
+);
+
+/* Para llamar a un mapa, traigo la funcion map-get y entre los parentesis
+primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
+
+.boton{
+    background-color: map-get($boton, bg-boton);
+    border: map-get($boton, border);
+}
+
+/* Otro ejemplo de mapa */
+$header:(
+  bg-header: black,
+  list:circle,
+  decoration:none,
+  border-header: solid 2px black,
+);
