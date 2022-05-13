@@ -10,7 +10,7 @@ despues de los dos puntos */
 $boton:(
    /* key - value (valor) */
    bg-boton: black,
-   border: 2px solid tomato,
+  
    color-text: white,
    font-size-boton:20px,
 );
@@ -25,8 +25,8 @@ primero va el nombre del mapa, y seguido de la coma la propiedad que quiero apli
 
 /* Otro ejemplo de mapa */
 $header:(
-  bg-header: black,
-  list:circle,
+  bg-header: nth($colores, 3),
+
   decoration:none,
   border-header: solid 2px black,
-);
+)

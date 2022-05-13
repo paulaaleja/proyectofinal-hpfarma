@@ -1,35 +1,40 @@
 /* lista */
 
-/* Con las listas puedo agrupar estilos que sean de la misma familia 
-que quiere decir esto? En vez de andar escribiendo cada variable,
-le pongo un nombre a esa lista y con coma , separo los valores
-tengan en cuenta que las listas se cierra la lista con ;*/
 
-/* Ejemplo de lista, de mi paleta de colores*/
+
+/* paleta de colores*/
 $colores: 
-#e88f2a,
+#ff88006b,
 #0d6efd,
 #00548a,
 white,
-grey;
+grey,
+rgba(255, 255, 255, 0),
+black;
 
 
-/* Ejemplo de lista de los font-size de mi sitio */
+/* font-size de mi sitio */
 $font-size:
 12px,
 16px,
 22px;
 
 
+
+/* lista color de TXT*/
+
+
+
 /* Con nth utilizo las lista,
 primero pongo el nombre de la lista, y despues por ejemplo en este caso,
 el numero del color / font-size */
 a {
-    font-size: nth($font-size, 2);
-    background-color: nth($colores, 2);
+    font-size: nth($font-size, 3);
+    background-color: nth($colores, 6);
     text-decoration: none;
+    color:nth($colores, 4);
      
 }
 
-a:hover { background-color:  nth($colores, 3);}
+a:hover { background-color:  nth($colores, 1);}
 

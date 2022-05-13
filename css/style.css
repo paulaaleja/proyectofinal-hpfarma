@@ -2,30 +2,22 @@
 para poder compilarlos al CSS  */
 /*Importamos todos los partials que vamos a utilizar, en este caso
 variables, listas y mapas */
-/* variables */
-/* Las variables son secciones reservadas en memoria para almacenar datos 
-Son espacios que nos guardan informacion */
-/* Para declarar una variable tengo que poner el signo
-pesos $, seguido del nombre que le quiero dar a esa variable, despues : y el valor */
-/* Ejemplos de variables */
 /* lista */
-/* Con las listas puedo agrupar estilos que sean de la misma familia 
-que quiere decir esto? En vez de andar escribiendo cada variable,
-le pongo un nombre a esa lista y con coma , separo los valores
-tengan en cuenta que las listas se cierra la lista con ;*/
-/* Ejemplo de lista, de mi paleta de colores*/
-/* Ejemplo de lista de los font-size de mi sitio */
+/* paleta de colores*/
+/* font-size de mi sitio */
+/* lista color de TXT*/
 /* Con nth utilizo las lista,
 primero pongo el nombre de la lista, y despues por ejemplo en este caso,
 el numero del color / font-size */
 a {
-  font-size: 16px;
-  background-color: #0d6efd;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
-  background-color: #00548a;
+  background-color: rgba(255, 136, 0, 0.4196078431);
 }
 
 /* mapas */
@@ -38,21 +30,17 @@ despues de los dos puntos */
 primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
 .boton {
   background-color: black;
-  border: 2px solid tomato;
 }
 
 /* Otro ejemplo de mapa */
 /* Generamos el nesting o anidamiento segundo nuestra estructura HTML */
 header {
   /*background-color: $bg-color-general;*/
-  background-color: black;
+  background-color: #00548a;
   /* media query */
 }
 header nav ul {
   list-style: none;
-}
-header nav ul li {
-  list-style: circle;
 }
 header nav ul li a {
   text-decoration: underline;
@@ -70,38 +58,43 @@ header nav ul li a:hover {
     background-color: grey;
   }
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 510px) {
   header {
     background-color: orange;
   }
 }
 
 /* footer*/
-.bg-imgfooter .d-flex {
-  color: aliceblue;
-}
-.bg-imgfooter .d-flex a {
-  color: aliceblue;
-}
-.bg-imgfooter .d-flex a .col-lg-8.col-md-6 {
-  color: aliceblue;
-}
-.bg-imgfooter .d-flex a .col-lg-8.col-md-6 li {
-  color: aliceblue;
-}
-.bg-imgfooter .d-flex a .col-lg-8.col-md-6 li .text-secondary mb-2 {
-  color: aliceblue;
-}
-.bg-imgfooter .d-flex a .col-lg-8.col-md-6 li .text-secondary mb-2 .lifoot {
-  color: aliceblue;
-  text-decoration: none;
-}
-.bg-imgfooter .d-flex a .col-lg-8.col-md-6 li .text-secondary mb-2 .lifoot .fab {
-  color: aliceblue;
-}
-
-footer .bg-imgfooter {
+footer .container-fluid {
   background-color: #00548a;
+}
+footer .container-fluid .container {
+  background-color: #00548a;
+}
+footer .container-fluid .container .text-primary {
+  color: white;
+}
+footer .container-fluid .container .text-primary .row {
+  background-color: white;
+}
+footer .container-fluid .container .text-primary .row p {
+  color: white;
+}
+footer .container-fluid .container .text-primary .row .col-lg-4 {
+  background-color: #0d6efd;
+  color: white;
+}
+footer .container-fluid .container .text-primary .row .col-lg-4 p {
+  color: azure;
+}
+footer .container-fluid .container .text-primary .row .col-lg-4 .d-flex {
+  color: white;
+}
+footer .container-fluid .container .text-primary .row .col-lg-4 a {
+  background-color: #0d6efd;
+}
+footer .container-fluid .container .text-primary .row .col-lg-4 a:hover {
+  color: rgba(255, 136, 0, 0.4196078431);
 }
 
 /* En este partial lo que hacemos es setear todos los estilos generales
@@ -111,32 +104,28 @@ de nuestro sitio */
   padding: 0;
 }
 
+.fab {
+  color: antiquewhite;
+}
+
 /* lista */
-/* Con las listas puedo agrupar estilos que sean de la misma familia 
-que quiere decir esto? En vez de andar escribiendo cada variable,
-le pongo un nombre a esa lista y con coma , separo los valores
-tengan en cuenta que las listas se cierra la lista con ;*/
-/* Ejemplo de lista, de mi paleta de colores*/
-/* Ejemplo de lista de los font-size de mi sitio */
+/* paleta de colores*/
+/* font-size de mi sitio */
+/* lista color de TXT*/
 /* Con nth utilizo las lista,
 primero pongo el nombre de la lista, y despues por ejemplo en este caso,
 el numero del color / font-size */
 a {
-  font-size: 16px;
-  background-color: #0d6efd;
+  font-size: 22px;
+  background-color: rgba(255, 255, 255, 0);
   text-decoration: none;
+  color: white;
 }
 
 a:hover {
-  background-color: #00548a;
+  background-color: rgba(255, 136, 0, 0.4196078431);
 }
 
-/* variables */
-/* Las variables son secciones reservadas en memoria para almacenar datos 
-Son espacios que nos guardan informacion */
-/* Para declarar una variable tengo que poner el signo
-pesos $, seguido del nombre que le quiero dar a esa variable, despues : y el valor */
-/* Ejemplos de variables */
 /* mapas */
 /* Los mapas a diferencia de las listas nos permiten crear como una lista
 pero de un monton de estilos agrupados y no necesiariamente de la misma 
@@ -147,7 +136,6 @@ despues de los dos puntos */
 primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
 .boton {
   background-color: black;
-  border: 2px solid tomato;
 }
 
 /* Otro ejemplo de mapa */
