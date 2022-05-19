@@ -9,6 +9,9 @@ variables, listas y mapas */
 /* Con nth utilizo las lista,
 primero pongo el nombre de la lista, y despues por ejemplo en este caso,
 el numero del color / font-size */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
 a {
   font-size: 22px;
   background-color: rgba(255, 255, 255, 0);
@@ -17,30 +20,61 @@ a {
 }
 
 a:hover {
-  background-color: rgba(255, 136, 0, 0.4196078431);
+  background-color: rgb(4, 166, 216);
 }
 
-/* mapas */
-/* Los mapas a diferencia de las listas nos permiten crear como una lista
-pero de un monton de estilos agrupados y no necesiariamente de la misma 
-familia, no es que tienen que ser  todos colores, o todas tipografias */
-/* El mapa se escribe como las variables o listas con el $, pero se abre abre parentesis
-despues de los dos puntos */
+/*h2*/
 /* Para llamar a un mapa, traigo la funcion map-get y entre los parentesis
 primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
-.boton {
-  background-color: black;
+.section-heading {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #00548a;
+  font-family: Helvetica;
+  color: #00548a;
 }
 
-/* Otro ejemplo de mapa */
+.section-subheading {
+  background-color: rgba(75, 38, 38, 0);
+  font-family: Helvetica;
+  font-size: 28px;
+}
+
+/* En este partial lo que hacemos es setear todos los estilos generales
+de nuestro sitio */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "helvetica";
+}
+
+/* Fuentes tipograficas */
+@font-face {
+  font-family: "Roboto";
+  src: url() format("");
+  font-display: swap;
+}
+/*
+Lo que hace el display:swap, es estar atento y revisa si la fuente tipografica todavia no se cargo
+si es asi, lo que hace es mostrar el contenido igual con una fuente alternativa, asi los usuarios
+pueden ver el contenido de igual manera, y una vez que se carga nuestra fuente tipografica este display
+swap se desactiva y te muestra la fuente original que nosotros seleccionamos 
+*/
 /* Generamos el nesting o anidamiento segundo nuestra estructura HTML */
 header {
   /*background-color: $bg-color-general;*/
+  background-color: white;
+}
+header nav {
   background-color: #00548a;
-  /* media query */
 }
 header nav ul {
   list-style: none;
+}
+header nav ul li {
+  list-style: circle;
 }
 header nav ul li a {
   text-decoration: underline;
@@ -49,18 +83,13 @@ header nav ul li a {
   clase / etiqueta o ID en donde lo necesitemos implementar */
 }
 header nav ul li a:hover {
-  color: grey;
+  color: #00548a;
 }
 @media screen and (max-width: 750px) {
   header nav ul li a {
     text-decoration: dotted;
-    color: grey;
-    background-color: grey;
-  }
-}
-@media screen and (max-width: 510px) {
-  header {
-    background-color: orange;
+    color: #00548a;
+    background-color: #00548a;
   }
 }
 
@@ -91,10 +120,10 @@ footer .container-fluid .container .text-primary .row .col-lg-4 .d-flex {
   color: white;
 }
 footer .container-fluid .container .text-primary .row .col-lg-4 a {
-  background-color: #0d6efd;
+  background-color: #00548a;
 }
 footer .container-fluid .container .text-primary .row .col-lg-4 a:hover {
-  color: rgba(255, 136, 0, 0.4196078431);
+  color: #00548a;
 }
 
 /* En este partial lo que hacemos es setear todos los estilos generales
@@ -104,10 +133,22 @@ de nuestro sitio */
   padding: 0;
 }
 
-.fab {
-  color: antiquewhite;
+body {
+  font-family: "helvetica";
 }
 
+/* Fuentes tipograficas */
+@font-face {
+  font-family: "Roboto";
+  src: url() format("");
+  font-display: swap;
+}
+/*
+Lo que hace el display:swap, es estar atento y revisa si la fuente tipografica todavia no se cargo
+si es asi, lo que hace es mostrar el contenido igual con una fuente alternativa, asi los usuarios
+pueden ver el contenido de igual manera, y una vez que se carga nuestra fuente tipografica este display
+swap se desactiva y te muestra la fuente original que nosotros seleccionamos 
+*/
 /* lista */
 /* paleta de colores*/
 /* font-size de mi sitio */
@@ -123,21 +164,299 @@ a {
 }
 
 a:hover {
-  background-color: rgba(255, 136, 0, 0.4196078431);
+  background-color: rgb(4, 166, 216);
 }
 
-/* mapas */
-/* Los mapas a diferencia de las listas nos permiten crear como una lista
-pero de un monton de estilos agrupados y no necesiariamente de la misma 
-familia, no es que tienen que ser  todos colores, o todas tipografias */
-/* El mapa se escribe como las variables o listas con el $, pero se abre abre parentesis
-despues de los dos puntos */
+/*h2*/
 /* Para llamar a un mapa, traigo la funcion map-get y entre los parentesis
 primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
-.boton {
-  background-color: black;
+.section-heading {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #00548a;
+  font-family: Helvetica;
+  color: #00548a;
 }
 
-/* Otro ejemplo de mapa */
+.section-subheading {
+  background-color: rgba(75, 38, 38, 0);
+  font-family: Helvetica;
+  font-size: 28px;
+}
+
+/*h2*/
+/* Para llamar a un mapa, traigo la funcion map-get y entre los parentesis
+primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
+.section-heading {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #00548a;
+  font-family: Helvetica;
+  color: #00548a;
+}
+
+.section-subheading {
+  background-color: rgba(75, 38, 38, 0);
+  font-family: Helvetica;
+  font-size: 28px;
+}
+
+/* extends */
+/* % = placeholder */
+/* 
+Los extends o extensiones son un paquete de propieades que nosotros podemos reutilizar 
+e implementar en un monton de lugares, la idea es reconocer que conjunto de propieades se repiten
+y generar con esas propieades un extend, como por ejemplo el extend flex que englobla esa tres propieades
+de flexbox
+*/
+/*
+Los extends se crean colocando el placeholder (%) + nombre de extend seguido de las llaves {}
+Y para llamarlos/utilizarlos llamamos a la regla @extend seguido del placeholder y el nombre del extend
+*/
+.p-5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
+
+.icono {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(4, 166, 216);
+  font-size: 2em;
+}
+
+.p-5 {
+  background-color: rgb(255, 200, 0);
+  border: 7px solid rgb(233, 236, 239);
+}
+
+.p-5 {
+  color: white;
+}
+
+.timeline {
+  position: relative;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  width: 2px;
+  margin-left: -1.5px;
+  content: "";
+  background-color: #e9ecef;
+}
+
+.timeline > li {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 50px;
+}
+
+.timeline > li:after, .timeline > li:before {
+  display: table;
+  content: " ";
+}
+
+.timeline > li:after {
+  clear: both;
+}
+
+.timeline > li .timeline-panel {
+  position: relative;
+  float: right;
+  width: 100%;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline > li .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.timeline > li .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.timeline > li .timeline-image {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #ffc800;
+}
+
+.timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 12px;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel {
+  float: right;
+  padding: 0 20px 0 100px;
+  text-align: left;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.timeline > li.timeline-inverted > .timeline-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.timeline > li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline .timeline-heading h4, .timeline .timeline-heading .h4 {
+  margin-top: 0;
+  color: inherit;
+}
+
+.timeline .timeline-heading h4.subheading, .timeline .timeline-heading .subheading.h4 {
+  text-transform: none;
+}
+
+.timeline .timeline-body > ul,
+.timeline .timeline-body > p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .timeline:before {
+    left: 50%;
+  }
+
+  .timeline > li {
+    min-height: 100px;
+    margin-bottom: 100px;
+  }
+
+  .timeline > li .timeline-panel {
+    float: left;
+    width: 41%;
+    padding: 0 20px 20px 30px;
+    text-align: right;
+  }
+
+  .timeline > li .timeline-image {
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin-left: -50px;
+  }
+
+  .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 16px;
+  }
+
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+    padding: 0 30px 20px 20px;
+    text-align: left;
+  }
+}
+@media (min-width: 992px) {
+  .timeline > li {
+    min-height: 150px;
+  }
+
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px;
+  }
+
+  .timeline > li .timeline-image {
+    width: 150px;
+    height: 150px;
+    margin-left: -75px;
+  }
+
+  .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: 30px;
+  }
+
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 20px 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .timeline > li {
+    min-height: 170px;
+  }
+
+  .timeline > li .timeline-panel {
+    padding: 0 20px 20px 100px;
+  }
+
+  .timeline > li .timeline-image {
+    width: 170px;
+    height: 170px;
+    margin-left: -85px;
+  }
+
+  .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
+    margin-top: 40px;
+  }
+
+  .timeline > li.timeline-inverted > .timeline-panel {
+    padding: 0 100px 20px 20px;
+  }
+}
+/* Mixins */
+/*@mixin flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+/* Los mixin a diferencia de los extends nos permiten
+poder generar variables/parametros vacios a los cuales le vamos a dar un valor en un futuro cuando los utilicemos
+*/
+/* Se crean con el @mixin y despues el nombre que le queremos dar a ese mixin en particular, seguido de parentisis ()
+en donde vamos a colocar las variables vacias, si es mas de una variable se separan con coma 
+despues abrimos llaves y dentro colocamos las propieades */
+/* Para utilizar/incluir un mixin es de la siguiente manera, con @include seguido del nombre del mixin y entre parententesis ()
+el valor que le asignamos a cada una de estas variables vacias, en el orden que las colocamos, ver el ejemplo: */
+.mb-5 {
+  display: auto;
+  align-items: center;
+  color: white;
+}
+
+.mb-5 {
+  font-display: flex;
+  font-size: 22px;
+  font-family: "helvetica";
+}
 
 /*# sourceMappingURL=style.css.map */

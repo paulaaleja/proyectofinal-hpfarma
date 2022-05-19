@@ -10,7 +10,8 @@ $colores:
 white,
 grey,
 rgba(255, 255, 255, 0),
-black;
+black,
+rgb(4, 166, 216);
 
 
 /* font-size de mi sitio */
@@ -25,6 +26,7 @@ $font-size:
 
 
 
+
 /* Con nth utilizo las lista,
 primero pongo el nombre de la lista, y despues por ejemplo en este caso,
 el numero del color / font-size */
@@ -36,5 +38,5 @@ a {
      
 }
 
-a:hover { background-color:  nth($colores, 1);}
+a:hover { background-color:  nth($colores, 8);}
 

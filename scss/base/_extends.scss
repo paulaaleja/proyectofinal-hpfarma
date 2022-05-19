@@ -1,0 +1,51 @@
+/* extends */
+/* % = placeholder */
+
+/* 
+Los extends o extensiones son un paquete de propieades que nosotros podemos reutilizar 
+e implementar en un monton de lugares, la idea es reconocer que conjunto de propieades se repiten
+y generar con esas propieades un extend, como por ejemplo el extend flex que englobla esa tres propieades
+de flexbox
+*/
+
+/*
+Los extends se crean colocando el placeholder (%) + nombre de extend seguido de las llaves {}
+Y para llamarlos/utilizarlos llamamos a la regla @extend seguido del placeholder y el nombre del extend
+*/
+
+%flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+    color:white;
+    font-size: 1em;
+}
+
+%fabi{ justify-content: center;
+    align-items: center;
+  
+    text-align: center;
+    color:rgb(4, 166, 216);
+    font-size: 2em;
+    
+}
+
+.icono{@extend %fabi;}
+
+
+
+%border{
+    background-color: rgb(255, 200, 0);
+    border: 7px solid rgb(233, 236, 239);
+}
+.p-5{
+    @extend %border;
+   
+    @extend %flex;
+    color:white;
+}
+
+
+
