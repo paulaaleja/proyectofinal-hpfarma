@@ -2,16 +2,7 @@
 /* % = placeholder */
 
 /* 
-Los extends o extensiones son un paquete de propieades que nosotros podemos reutilizar 
-e implementar en un monton de lugares, la idea es reconocer que conjunto de propieades se repiten
-y generar con esas propieades un extend, como por ejemplo el extend flex que englobla esa tres propieades
-de flexbox
-*/
-
-/*
-Los extends se crean colocando el placeholder (%) + nombre de extend seguido de las llaves {}
-Y para llamarlos/utilizarlos llamamos a la regla @extend seguido del placeholder y el nombre del extend
-*/
+Se utiliza para modificar los iconos y txt del navtop y el pie*/
 
 %flex{
     display: flex;

@@ -1,21 +1,7 @@
-/* Mixins */
+/* Mixins nuevamente para el pie para el txt */
 
-/*@mixin flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
 
-/* Los mixin a diferencia de los extends nos permiten
-poder generar variables/parametros vacios a los cuales le vamos a dar un valor en un futuro cuando los utilicemos
-*/
 
-/* Se crean con el @mixin y despues el nombre que le queremos dar a ese mixin en particular, seguido de parentisis ()
-en donde vamos a colocar las variables vacias, si es mas de una variable se separan con coma 
-despues abrimos llaves y dentro colocamos las propieades */
-
-/* Para utilizar/incluir un mixin es de la siguiente manera, con @include seguido del nombre del mixin y entre parententesis ()
-el valor que le asignamos a cada una de estas variables vacias, en el orden que las colocamos, ver el ejemplo: */
 
 @mixin flex ($flex, $align,$tono){
     display: $flex;

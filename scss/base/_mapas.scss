@@ -1,4 +1,4 @@
-
+/*utilizacion de mapas para los titulos y subtitulos */
 
 $titulo-principal:(
    /* key - value (valor) */
@@ -30,7 +30,8 @@ primero va el nombre del mapa, y seguido de la coma la propiedad que quiero apli
 
 .section-heading{
     background-color: map-get($titulo-principal, bg-titular);
-    border: map-get($titulo-principal, border);
+  text-align: center;
+  
     font-family: map-get($titulo-principal, font-fam);
     color: nth($colores , 3 );
     

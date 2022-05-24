@@ -5,7 +5,6 @@ variables, listas y mapas */
 /* lista */
 /* paleta de colores*/
 /* font-size de mi sitio */
-/* lista color de TXT*/
 /* Con nth utilizo las lista,
 primero pongo el nombre de la lista, y despues por ejemplo en este caso,
 el numero del color / font-size */
@@ -13,7 +12,7 @@ el numero del color / font-size */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto:wght@100&display=swap");
 a {
-  font-size: 22px;
+  font-size: 18px;
   background-color: rgba(255, 255, 255, 0);
   text-decoration: none;
   color: white;
@@ -23,12 +22,13 @@ a:hover {
   background-color: rgb(4, 166, 216);
 }
 
+/*utilizacion de mapas para los titulos y subtitulos */
 /*h2*/
 /* Para llamar a un mapa, traigo la funcion map-get y entre los parentesis
 primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
 .section-heading {
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #00548a;
+  text-align: center;
   font-family: Helvetica;
   color: #00548a;
 }
@@ -39,8 +39,7 @@ primero va el nombre del mapa, y seguido de la coma la propiedad que quiero apli
   font-size: 28px;
 }
 
-/* En este partial lo que hacemos es setear todos los estilos generales
-de nuestro sitio */
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -126,8 +125,7 @@ footer .container-fluid .container .text-primary .row .col-lg-4 a:hover {
   color: #00548a;
 }
 
-/* En este partial lo que hacemos es setear todos los estilos generales
-de nuestro sitio */
+/* Estilos generales */
 * {
   margin: 0;
   padding: 0;
@@ -152,12 +150,11 @@ swap se desactiva y te muestra la fuente original que nosotros seleccionamos
 /* lista */
 /* paleta de colores*/
 /* font-size de mi sitio */
-/* lista color de TXT*/
 /* Con nth utilizo las lista,
 primero pongo el nombre de la lista, y despues por ejemplo en este caso,
 el numero del color / font-size */
 a {
-  font-size: 22px;
+  font-size: 18px;
   background-color: rgba(255, 255, 255, 0);
   text-decoration: none;
   color: white;
@@ -167,12 +164,13 @@ a:hover {
   background-color: rgb(4, 166, 216);
 }
 
+/*utilizacion de mapas para los titulos y subtitulos */
 /*h2*/
 /* Para llamar a un mapa, traigo la funcion map-get y entre los parentesis
 primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
 .section-heading {
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #00548a;
+  text-align: center;
   font-family: Helvetica;
   color: #00548a;
 }
@@ -183,12 +181,13 @@ primero va el nombre del mapa, y seguido de la coma la propiedad que quiero apli
   font-size: 28px;
 }
 
+/*utilizacion de mapas para los titulos y subtitulos */
 /*h2*/
 /* Para llamar a un mapa, traigo la funcion map-get y entre los parentesis
 primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
 .section-heading {
   background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #00548a;
+  text-align: center;
   font-family: Helvetica;
   color: #00548a;
 }
@@ -202,15 +201,7 @@ primero va el nombre del mapa, y seguido de la coma la propiedad que quiero apli
 /* extends */
 /* % = placeholder */
 /* 
-Los extends o extensiones son un paquete de propieades que nosotros podemos reutilizar 
-e implementar en un monton de lugares, la idea es reconocer que conjunto de propieades se repiten
-y generar con esas propieades un extend, como por ejemplo el extend flex que englobla esa tres propieades
-de flexbox
-*/
-/*
-Los extends se crean colocando el placeholder (%) + nombre de extend seguido de las llaves {}
-Y para llamarlos/utilizarlos llamamos a la regla @extend seguido del placeholder y el nombre del extend
-*/
+Se utiliza para modificar los iconos y txt del navtop y el pie*/
 .p-5 {
   display: flex;
   justify-content: center;
@@ -433,20 +424,7 @@ Y para llamarlos/utilizarlos llamamos a la regla @extend seguido del placeholder
     padding: 0 100px 20px 20px;
   }
 }
-/* Mixins */
-/*@mixin flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
-/* Los mixin a diferencia de los extends nos permiten
-poder generar variables/parametros vacios a los cuales le vamos a dar un valor en un futuro cuando los utilicemos
-*/
-/* Se crean con el @mixin y despues el nombre que le queremos dar a ese mixin en particular, seguido de parentisis ()
-en donde vamos a colocar las variables vacias, si es mas de una variable se separan con coma 
-despues abrimos llaves y dentro colocamos las propieades */
-/* Para utilizar/incluir un mixin es de la siguiente manera, con @include seguido del nombre del mixin y entre parententesis ()
-el valor que le asignamos a cada una de estas variables vacias, en el orden que las colocamos, ver el ejemplo: */
+/* Mixins nuevamente para el pie para el txt */
 .mb-5 {
   display: auto;
   align-items: center;
