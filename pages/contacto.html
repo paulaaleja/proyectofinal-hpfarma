@@ -165,25 +165,35 @@
 
             <div class="row justify-content-center">
                 <div class="col-lg-9">
-                    <form>
+                    <form id="form2">
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Nombre y Apellido" style="height: 55px;">
+                                <input type="text" name="name" class="form-control bg-light border-0 px-4" placeholder="Nombre y Apellido" style="height: 55px;">
                             </div>
                             <div class="col-sm-6">
-                                <input type="email" class="form-control bg-light border-0 px-4" placeholder="Tu Email" style="height: 55px;">
+                                <input type="email" name="email" class="form-control bg-light border-0 px-4" placeholder="Tu Email" style="height: 55px;">
                             </div>
                             <div class="col-sm-12">
-                                <input type="text" class="form-control bg-light border-0 px-4" placeholder="Tu Consulta o Sugerencia" style="height: 55px;">
+                                <input type="text" name="consul" class="form-control bg-light border-0 px-4" placeholder="Tu Consulta o Sugerencia" style="height: 55px;">
                             </div>
                             <div class="col-sm-12">
-                                <textarea class="form-control bg-light border-0 px-4 py-3" rows="4" placeholder="Message"></textarea>
+                                <textarea class="form-control bg-light border-0 px-4 py-3" rows="4" name="message" placeholder="Message"></textarea>
                             </div>
                             <div class="col-sm-12">
-                                <button class="btn btn-primary border-inner w-100 py-3" type="submit">Enviar</button>
+                                <button class="btn btn-primary border-inner w-100 py-3" id="button" type="submit">Enviar</button>
                             </div>
                         </div>
                     </form>
+                    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('gLox-OgVe-0bGp7iV')
+</script>
+
+
+
+
                 </div>
             </div>
         </div>
@@ -231,7 +241,7 @@
     <div class="container">
         <div class="row gx-5">
             <div class="col-lg-4 col-md-6 mb-lg-n5" style="padding: 5%;">
-                <img src="../assets/img/logo-inverse.png" alt="">
+                <img src="../assets/img/logo-inverse.png" alt="farmacia hp farma">
             </div>
             <div class="col-lg-8 col-md-6">
                 <div class="row gx-5">
@@ -305,4 +315,28 @@
 
 
 </body>
+
+<script>
+
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_b1n6o2u';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Gracias por escribirnos, te responderemos a la brevedad');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
+});
+</script>
 </html>
