@@ -1,7 +1,6 @@
 /*Importamos todos los partials que vamos a utilizar, en este caso
 variables, listas y mapas */
 
-@import '../base/variables';
 @import '../base/listas';
 @import '../base/mapas';
 @import '../base/estilosGenerales';
@@ -19,9 +18,6 @@ header {
 
                 a {
                     text-decoration: underline;
-                    /* Con el signo del ampersand & podemos agregar 
-                    pseudoclases y pseudoelementos dentro de cada 
-                    clase / etiqueta o ID en donde lo necesitemos implementar */
                     &:hover {
                         color: nth($colores, 3);
                     }

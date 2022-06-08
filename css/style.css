@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Importamos todos los partials que creamos
 para poder compilarlos al CSS  */
 /*Importamos todos los partials que vamos a utilizar, en este caso
@@ -43,10 +44,12 @@ primero va el nombre del mapa, y seguido de la coma la propiedad que quiero apli
 * {
   margin: 0;
   padding: 0;
+  box-sizing: 0;
 }
 
 body {
   font-family: "helvetica";
+  background-color: rgba(255, 255, 255, 0.37);
 }
 
 /* Fuentes tipograficas */
@@ -55,12 +58,28 @@ body {
   src: url() format("");
   font-display: swap;
 }
-/*
-Lo que hace el display:swap, es estar atento y revisa si la fuente tipografica todavia no se cargo
-si es asi, lo que hace es mostrar el contenido igual con una fuente alternativa, asi los usuarios
-pueden ver el contenido de igual manera, y una vez que se carga nuestra fuente tipografica este display
-swap se desactiva y te muestra la fuente original que nosotros seleccionamos 
-*/
+/* print */
+@media print {
+  p {
+    color: tomato;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+}
+/* Cuando seleccionas contenido dentro de nuestra pagina 
+ */
+*::selection {
+  background-color: rgb(9, 28, 82);
+  color: rgb(118, 205, 255);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  /* para que la imagen no se distorcione */
+  object-fit: cover;
+}
+
 /* Generamos el nesting o anidamiento segundo nuestra estructura HTML */
 header {
   /*background-color: $bg-color-general;*/
@@ -77,9 +96,6 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: underline;
-  /* Con el signo del ampersand & podemos agregar 
-  pseudoclases y pseudoelementos dentro de cada 
-  clase / etiqueta o ID en donde lo necesitemos implementar */
 }
 header nav ul li a:hover {
   color: #00548a;
@@ -129,10 +145,12 @@ footer .container-fluid .container .text-primary .row .col-lg-4 a:hover {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: 0;
 }
 
 body {
   font-family: "helvetica";
+  background-color: rgba(255, 255, 255, 0.37);
 }
 
 /* Fuentes tipograficas */
@@ -141,12 +159,28 @@ body {
   src: url() format("");
   font-display: swap;
 }
-/*
-Lo que hace el display:swap, es estar atento y revisa si la fuente tipografica todavia no se cargo
-si es asi, lo que hace es mostrar el contenido igual con una fuente alternativa, asi los usuarios
-pueden ver el contenido de igual manera, y una vez que se carga nuestra fuente tipografica este display
-swap se desactiva y te muestra la fuente original que nosotros seleccionamos 
-*/
+/* print */
+@media print {
+  p {
+    color: tomato;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+}
+/* Cuando seleccionas contenido dentro de nuestra pagina 
+ */
+*::selection {
+  background-color: rgb(9, 28, 82);
+  color: rgb(118, 205, 255);
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  /* para que la imagen no se distorcione */
+  object-fit: cover;
+}
+
 /* lista */
 /* paleta de colores*/
 /* font-size de mi sitio */
@@ -162,23 +196,6 @@ a {
 
 a:hover {
   background-color: rgb(4, 166, 216);
-}
-
-/*utilizacion de mapas para los titulos y subtitulos */
-/*h2*/
-/* Para llamar a un mapa, traigo la funcion map-get y entre los parentesis
-primero va el nombre del mapa, y seguido de la coma la propiedad que quiero aplicar */
-.section-heading {
-  background-color: rgba(0, 0, 0, 0);
-  text-align: center;
-  font-family: Helvetica;
-  color: #00548a;
-}
-
-.section-subheading {
-  background-color: rgba(75, 38, 38, 0);
-  font-family: Helvetica;
-  font-size: 28px;
 }
 
 /*utilizacion de mapas para los titulos y subtitulos */
@@ -435,6 +452,34 @@ Se utiliza para modificar los iconos y txt del navtop y el pie*/
   font-display: flex;
   font-size: 22px;
   font-family: "helvetica";
+}
+
+.c {
+  margin: auto;
+}
+
+/* El contenedor con el padding-top crea el tamaño del vídeo */
+.flexdiv {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+/* El iframe se adapta al tamaño del contenedor */
+.externo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  /* para que la imagen no se distorcione */
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
